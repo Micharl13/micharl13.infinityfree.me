@@ -83,10 +83,10 @@ h2 {
 }
 
 .card-img-top {
-    width: 150px;  /* adjust as needed */
+    width: 100px;
     height: auto;
-    margin: 0 auto; /* centers it */
-    padding: 10px;  /* optional spacing */
+    margin: 0 auto;
+    padding: 10px;
 }
 
 /* Footer */
