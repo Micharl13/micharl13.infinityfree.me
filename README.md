@@ -8,7 +8,7 @@ I'm a student who enjoys coding, photography, baking, and mystery/sci-fi novels.
 This site is where I experiment with web design and show off my projects.
 
 ## 🚀 Tech
-- Built with **HTML, CSS, and GitHub Pages**
+- Built with **HTML, CSS, Bootstrap, and GitHub Pages**
 - Automatically deployed from the `main` branch
 
 ## 🧩 How it works
