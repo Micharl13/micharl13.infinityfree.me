@@ -82,6 +82,13 @@ h2 {
   box-shadow: 0 0 15px var(--green);
 }
 
+.card-img-top {
+    width: 150px;  /* adjust as needed */
+    height: auto;
+    margin: 0 auto; /* centers it */
+    padding: 10px;  /* optional spacing */
+}
+
 /* Footer */
 footer {
   background-color: var(--gray);
