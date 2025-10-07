@@ -14,8 +14,9 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: var(--gray);
-  box-shadow: 0 2px 5px rgba(0, 255, 136, 0.1);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .navbar-brand {
