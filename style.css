@@ -7,7 +7,7 @@
 
 body {
   background-color: radial-gradient(circle at top left, #003300, #000);
-  color: var(--text);
+  color: radial-gradient(circle at top left, #003300, #000);
   font-family: "Segoe UI", sans-serif;
   scroll-behavior: smooth;
 }
