@@ -50,7 +50,6 @@ body.fade-in {
 /* Hero Section */
 .hero {
   padding: 160px 20px 100px;
-  opacity: 100;
 }
 
 .hero h1 {
@@ -77,8 +76,7 @@ body.fade-in {
 
 /* Sections */
 section {
-  padding: 80px 0;
-  opacity: 100;
+  padding: 80px 0
 }
 
 h2 {
