@@ -164,6 +164,12 @@ h2 {
   }
 }
 
+.card-link {
+  text-decoration: none; /* remove underline from the link */
+  color: inherit; /* make text color stay white */
+  display: block; /* ensures the link fills the column */
+}
+
 /* Footer */
 footer {
   background-color: var(--gray);
