@@ -137,26 +137,3 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-
-/* Contact Icons */
-.icon-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: var(--gray);
-  color: var(--green);
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  border: 2px solid var(--green);
-  text-decoration: none;
-}
-
-.icon-btn:hover {
-  background-color: var(--green);
-  color: var(--black);
-  box-shadow: 0 0 15px var(--green);
-  transform: translateY(-5px);
-}
