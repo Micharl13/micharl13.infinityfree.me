@@ -161,25 +161,6 @@ h2 {
   opacity: 1;
 }
 
-/* Top-left link icon */
-.link-icon {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 18px;
-  color: #fff;
-  background-color: rgba(0,0,0,0.5);
-  padding: 5px;
-  border-radius: 50%;
-  transition: transform 0.3s, background-color 0.3s;
-  z-index: 10;
-}
-
-.project-card:hover .link-icon {
-  transform: scale(1.2);
-  background-color: rgba(0,0,0,0.8);
-}
-
 /* Responsive adjustments */
 @media (max-width: 767px) {
   .card-footer-link small {
@@ -189,11 +170,6 @@ h2 {
 
   .project-logo {
     max-height: 120px;
-  }
-
-  .link-icon {
-    font-size: 16px;
-    padding: 4px;
   }
 }
 
