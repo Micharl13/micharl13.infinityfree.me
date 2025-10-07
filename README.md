@@ -5,7 +5,7 @@ This repo hosts the source code for my site: [micharl13.github.io](https://micha
 
 ## 🧠 About
 I'm a student who enjoys coding, photography, baking, and mystery/sci-fi novels.  
-This site is where I experiment with web design and show off my projects.
+This site is where I show off my projects and stuff.
 
 ## 🚀 Tech
 - Built with **HTML, CSS, Bootstrap, and GitHub Pages**
