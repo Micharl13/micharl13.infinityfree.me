@@ -89,6 +89,21 @@ h2 {
     padding: 10px;
 }
 
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link .card {
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-link .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px var(--green);
+}
+
 /* Footer */
 footer {
   background-color: var(--gray);
