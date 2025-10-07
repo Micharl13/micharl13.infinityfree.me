@@ -81,47 +81,57 @@ h2 {
   margin-bottom: 40px;
 }
 
-/* Cards */
+/* =========================
+   Project Cards
+   ========================= */
 
 /* Card container */
-.portfolio-card {
-  background-color: #1e1e1e; /* dark background */
-  color: #fff; /* text color */
-  border: none; /* remove default border */
-  text-decoration: none; /* remove underlines */
-  border-radius: 10px; /* optional, smooth corners */
+.project-card {
+  background-color: #1e1e1e;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
-  position: relative; /* for absolute positioning inside */
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
 }
 
 /* Hover effects: lift + green glow */
-.portfolio-card:hover {
+.project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 20px #4caf50, 0 0 30px #4caf50; /* pulsing green glow effect */
+  box-shadow: 0 0 20px #4caf50, 0 0 30px #4caf50;
 }
 
-/* Top-left link icon */
-.link-icon {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 20px;
-  color: #fff;
-  background-color: rgba(0,0,0,0.5);
-  padding: 5px;
-  border-radius: 50%;
-  z-index: 10;
-  transition: transform 0.3s, background-color 0.3s;
-  pointer-events: none; /* so whole card remains clickable */
+/* Image hover effect */
+.project-logo {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  border-radius: 5px;
+  transition: transform 0.3s, filter 0.3s;
 }
 
-.portfolio-card:hover .link-icon {
-  transform: scale(1.2);
-  background-color: rgba(0,0,0,0.8);
+.project-card:hover .project-logo {
+  transform: scale(1.03);
+  filter: brightness(1.05);
+}
+
+/* Card title */
+.project-card .card-title {
+  color: #4caf50;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Card description */
+.project-card .card-text {
+  color: #ccc;
+  font-size: 0.9rem;
 }
 
 /* Bottom-left URL with truncation */
-.card-url {
+.card-footer-link small {
   position: absolute;
   bottom: 10px;
   left: 10px;
@@ -140,46 +150,47 @@ h2 {
   /* Fade-in on hover */
   opacity: 0;
   transition: opacity 0.3s;
-  pointer-events: none;
 }
 
-.portfolio-card:hover .card-url {
+/* Show URL on hover */
+.project-card:hover .card-footer-link small {
   opacity: 1;
 }
 
-/* Image hover effect */
-.portfolio-card img {
-  transition: transform 0.3s, filter 0.3s;
-  border-radius: 5px; /* optional for rounded images */
+/* Top-left link icon */
+.link-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
+  padding: 5px;
+  border-radius: 50%;
+  transition: transform 0.3s, background-color 0.3s;
+  z-index: 10;
 }
 
-.portfolio-card:hover img {
-  transform: scale(1.03);
-  filter: brightness(1.05);
+.project-card:hover .link-icon {
+  transform: scale(1.2);
+  background-color: rgba(0,0,0,0.8);
 }
 
 /* Responsive adjustments */
 @media (max-width: 767px) {
-  .link-icon {
-    font-size: 18px;
-    padding: 4px;
-  }
-
-  .card-url {
+  .card-footer-link small {
     font-size: 10px;
     padding: 2px 4px;
   }
 
-  .portfolio-card img {
-    max-height: 200px; /* optional for very small screens */
-    object-fit: contain;
+  .project-logo {
+    max-height: 120px;
   }
-}
 
-.card-link {
-  text-decoration: none; /* remove underline from the link */
-  color: inherit; /* make text color stay white */
-  display: block; /* ensures the link fills the column */
+  .link-icon {
+    font-size: 16px;
+    padding: 4px;
+  }
 }
 
 /* Footer */
