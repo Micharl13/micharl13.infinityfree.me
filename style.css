@@ -50,7 +50,7 @@ body.fade-in {
 /* Hero Section */
 .hero {
   padding: 160px 20px 100px;
-  background: radial-gradient(circle at top left, #003300, #000);
+  opacity: 100;
 }
 
 .hero h1 {
@@ -78,6 +78,7 @@ body.fade-in {
 /* Sections */
 section {
   padding: 80px 0;
+  opacity: 100;
 }
 
 h2 {
@@ -175,10 +176,10 @@ h2 {
 
 /* Footer */
 footer {
-  background-color: var(--gray);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   padding: 30px 0;
-  border-top: 1px solid #222;
-  color: #aaa;
 }
 
 footer a {
