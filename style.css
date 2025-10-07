@@ -70,40 +70,17 @@ h2 {
 }
 
 /* Cards */
-.card {
-  background-color: var(--gray);
-  border: 1px solid #222;
-  color: var(--text);
+/* Card container */
+.portfolio-card {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.card:hover {
+.portfolio-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 15px var(--green);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
 }
 
-.card-img-top {
-    width: 150px;
-    height: auto;
-    margin: 0 auto;
-    padding: 10px;
-}
-
-.card-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.card-link .card {
-  cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card-link .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px var(--green);
-}
-
+/* Top-left link icon */
 .link-icon {
   position: absolute;
   top: 10px;
@@ -114,11 +91,51 @@ h2 {
   padding: 5px;
   border-radius: 50%;
   z-index: 10;
-  transition: transform 0.3s;
+  transition: transform 0.3s, background-color 0.3s;
 }
 
-.card:hover .link-icon {
+.portfolio-card:hover .link-icon {
   transform: scale(1.2);
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Bottom-left URL with truncation */
+.card-url {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
+  padding: 3px 6px;
+  border-radius: 5px;
+  
+  /* Truncation */
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  /* Fade-in on hover */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.portfolio-card:hover .card-url {
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .link-icon {
+    font-size: 18px;
+    padding: 4px;
+  }
+
+  .card-url {
+    font-size: 10px;
+    padding: 2px 4px;
+  }
 }
 
 /* Footer */
