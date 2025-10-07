@@ -70,14 +70,22 @@ h2 {
 }
 
 /* Cards */
+
 /* Card container */
 .portfolio-card {
+  background-color: #1e1e1e; /* dark background */
+  color: #fff; /* text color */
+  border: none; /* remove default border */
+  text-decoration: none; /* remove underlines */
+  border-radius: 10px; /* optional, smooth corners */
   transition: transform 0.3s, box-shadow 0.3s;
+  position: relative; /* for absolute positioning inside */
 }
 
+/* Hover effects: lift + green glow */
 .portfolio-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px #4caf50, 0 0 30px #4caf50; /* pulsing green glow effect */
 }
 
 /* Top-left link icon */
@@ -92,6 +100,7 @@ h2 {
   border-radius: 50%;
   z-index: 10;
   transition: transform 0.3s, background-color 0.3s;
+  pointer-events: none; /* so whole card remains clickable */
 }
 
 .portfolio-card:hover .link-icon {
@@ -109,8 +118,8 @@ h2 {
   background-color: rgba(0,0,0,0.5);
   padding: 3px 6px;
   border-radius: 5px;
-  
-  /* Truncation */
+
+  /* Truncate long URLs */
   max-width: 90%;
   white-space: nowrap;
   overflow: hidden;
@@ -119,10 +128,22 @@ h2 {
   /* Fade-in on hover */
   opacity: 0;
   transition: opacity 0.3s;
+  pointer-events: none;
 }
 
 .portfolio-card:hover .card-url {
   opacity: 1;
+}
+
+/* Image hover effect */
+.portfolio-card img {
+  transition: transform 0.3s, filter 0.3s;
+  border-radius: 5px; /* optional for rounded images */
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.03);
+  filter: brightness(1.05);
 }
 
 /* Responsive adjustments */
@@ -135,6 +156,11 @@ h2 {
   .card-url {
     font-size: 10px;
     padding: 2px 4px;
+  }
+
+  .portfolio-card img {
+    max-height: 200px; /* optional for very small screens */
+    object-fit: contain;
   }
 }
 
