@@ -43,7 +43,7 @@ body.fade-in {
   color: var(--green) !important;
 }
 
-.nav-item .current {
+.nav-link .current {
   color: var(--green);
 }
 
