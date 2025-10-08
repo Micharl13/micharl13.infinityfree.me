@@ -1,66 +1,34 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Micharl13 | Portfolio</title>
-  <style>
-    /* Basic reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Arial', sans-serif;
-    }
-
-    body {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #f7f7f7;
-      color: #333;
-      text-align: center;
-    }
-
-    .container {
-      padding: 20px 40px;
-      border: 2px dashed #ff9800;
-      border-radius: 10px;
-      background: #fff;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      animation: pulse 2s infinite;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.2rem;
-      color: #666;
-    }
-
-    /* Simple pulse animation */
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-    }
-
-    /* Optional small icon above text */
-    .icon {
-      font-size: 4rem;
-      margin-bottom: 15px;
-      color: #ff9800;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Micharl13 | Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
-<body>
-  <div class="container">
-    <div class="icon">🚧</div>
-    <h1>Under Construction</h1>
-    <p>We are working hard to bring you something awesome. Stay tuned!</p>
-  </div>
+<body class="fade">
+  <header>
+    <h1 class="logo">Micharl13</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Find Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="section home-section">
+    <h2>Welcome to My Portfolio</h2>
+    <p>Hi, I’m Micharl13 — a young creator who loves code, design, and tech magic.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Micharl13. Built with 💚 and JavaScript wizardry.</p>
+  </footer>
 </body>
 </html>
