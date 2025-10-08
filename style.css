@@ -77,7 +77,7 @@ header {
 }
 
 .home-section {
-  background: radial-gradient(ellipse 75% 50% at top left, #000000 0%, #0a0a0a 40%, #39FF14 100%);
+  background: radial-gradient(ellipse 75% 50% at top left, #000000 50%, #39FF14 100%);
   color: var(--white);
 }
 
