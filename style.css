@@ -26,9 +26,10 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  padding: 0 2rem; /* compact height */
-  backdrop-filter: blur(10px); /* creates the frosted glass blur */
-  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  padding: 0 2rem;
+  background-color: rgba(10, 10, 10, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
   z-index: 10;
