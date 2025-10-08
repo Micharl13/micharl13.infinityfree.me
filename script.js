@@ -19,18 +19,6 @@ document.querySelectorAll('a[href]').forEach(link => {
   }
 });
 
-// Header shrink on scroll
-const header = document.querySelector('header');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    header.style.backgroundColor = '#111';
-    header.style.boxShadow = '0 2px 15px rgba(0, 255, 136, 0.2)';
-  } else {
-    header.style.backgroundColor = 'var(--gray)';
-    header.style.boxShadow = 'none';
-  }
-});
-
 // Reveal animation when scrolling
 const revealElements = document.querySelectorAll('.section');
 const revealOnScroll = () => {
