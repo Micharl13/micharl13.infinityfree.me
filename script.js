@@ -18,24 +18,3 @@ document.querySelectorAll('a[href]').forEach(link => {
     });
   }
 });
-
-// Reveal animation when scrolling
-const revealElements = document.querySelectorAll('.section');
-const revealOnScroll = () => {
-  revealElements.forEach(el => {
-    const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 100) {
-      el.style.opacity = 1;
-      el.style.transform = 'translateY(0)';
-    }
-  });
-};
-
-revealElements.forEach(el => {
-  el.style.opacity = 0;
-  el.style.transform = 'translateY(40px)';
-  el.style.transition = 'all 0.8s ease-out';
-});
-
-window.addEventListener('scroll', revealOnScroll);
-revealOnScroll();
