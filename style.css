@@ -73,6 +73,8 @@ header {
 .section {
   padding: 4rem 2rem;
   text-align: center;
+  background: radial-gradient(circle at top left, #000000, #39FF14);
+
 }
 
 .home-section {
