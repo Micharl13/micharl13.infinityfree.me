@@ -78,7 +78,7 @@ header {
 }
 
 .home-section {
-  background: linear-gradient(135deg, var(--black), var(--gray));
+  background: radial-gradient(circle at top left, #000000, #39FF14);
   color: var(--white);
 }
 
