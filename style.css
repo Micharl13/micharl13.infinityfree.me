@@ -25,7 +25,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 2rem; /* compact height */
+  height: 60px;
+  padding: 0 2rem; /* compact height */
   background-color: rgba(10, 10, 10, 0.5); /* semi-transparent black */
   backdrop-filter: blur(10px); /* creates the frosted glass blur */
   -webkit-backdrop-filter: blur(10px); /* for Safari */
