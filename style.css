@@ -5,6 +5,12 @@
   --black: #0a0a0a;
   --gray: #222;
   --white: #f5f5f5;
+  --fade-duration: 300ms; /* keep this in sync with JS (JS reads it automatically) */
+}
+
+html, body {
+  height: 100%;
+  background-color: var(--black); /* prevents white flash on load */
 }
 
 body {
@@ -14,7 +20,9 @@ body {
   color: var(--white);
   scroll-behavior: smooth;
   opacity: 1;
-  transition: opacity 0.5s ease;
+  transition: opacity var(--fade-duration) ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body.fade {
@@ -26,13 +34,14 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  padding: 0 2rem;
-  background-color: rgba(10, 10, 10, 0.5);
-  backdrop-filter: blur(10px);
+  padding: 0 2rem; /* compact height */
+  background-color: rgba(10, 10, 10, 0.45);
+  backdrop-filter: blur(10px); /* frosted glass */
   -webkit-backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
   z-index: 10;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .logo {
@@ -60,6 +69,7 @@ header {
   color: var(--green);
 }
 
+/* No slide-up code here — sections simply render normally */
 .section {
   padding: 4rem 2rem;
   text-align: center;
