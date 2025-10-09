@@ -73,11 +73,11 @@ header {
 .section {
   padding: 4rem 2rem;
   text-align: center;
-  background: linear-gradient(to right, #000000, #39FF14);
+  background: linear-gradient(to right, #000000, #008000);
 }
 
 .home-section {
-  background: linear-gradient(to right, #000000, #39FF14);
+  background: linear-gradient(to right, #000000, #008000);
   color: var(--white);
 }
 
