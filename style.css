@@ -73,11 +73,11 @@ header {
 .section {
   padding: 4rem 2rem;
   text-align: center;
-  background: radial-gradient(circle 75% 50% at top left, #000000 0%, #0a0a0a 40%, #39FF14 100%);
+  background: linear-gradient(to right, #000000 50%, #39FF14 50%);
 }
 
 .home-section {
-  background: radial-gradient(circle 75% 50% at top left, #000000 50%, #39FF14 100%);
+  background: linear-gradient(to right, #000000 50%, #39FF14 50%);
   color: var(--white);
 }
 
