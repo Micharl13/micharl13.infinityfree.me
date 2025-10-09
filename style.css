@@ -110,11 +110,26 @@ header {
   padding: 2rem;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none; /* remove underline */
+  color: var(--white); /* keep text visible */
+  display: block; /* makes entire card clickable */
+  cursor: pointer;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.4); /* green glow */
+  color: var(--green);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: var(--green);
+}
+
+.project-card p {
+  color: var(--white);
+  opacity: 0.9;
 }
 
 .gallery-grid {
