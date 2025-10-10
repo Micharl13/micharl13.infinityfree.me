@@ -4,36 +4,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Micharl13 | Gallery</title>
+  <title>Gallery | Micharl13</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 <body class="fade">
   <header>
-    <h1 class="logo">Micharl13</h1>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="findme.html">Find Me</a></li>
-      </ul>
-    </nav>
+    <div class="logo">Micharl13</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="findme.html">Find Me</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
   </header>
 
-  <main class="section gallery-section">
+  <section class="section" id="gallery">
     <h2>Photo Gallery</h2>
-    <p>A glimpse into my creative world — snapshots, projects, and experiments.</p>
-  <div class="gallery-grid">
-    <img src="images/photo1.jpg" alt="Cool photo 1">
-    <img src="images/photo2.jpg" alt="Cool photo 2">
-    <img src="images/photo3.jpg" alt="Cool photo 3">
-    <img src="images/photo4.jpg" alt="Cool photo 4">
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <img src="images/photo1.jpg" alt="Sunset over mountains" data-title="Sunset Over Mountains" data-date="March 5, 2024">
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/photo2.jpg" alt="City skyline at night" data-title="City Skyline" data-date="June 11, 2024">
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/photo3.jpg" alt="Forest path" data-title="Misty Forest Path" data-date="August 20, 2024">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+    <div class="caption">
+      <h3 id="lightbox-title"></h3>
+      <p id="lightbox-date"></p>
+    </div>
   </div>
-  </main>
+
   <footer>
-    <p>&copy; 2025 Micharl13 - Hosted by GitHub Pages.</p>
+    <p>© 2025 Micharl13 - Hosted by GitHub Pages</p>
   </footer>
 </body>
 </html>
