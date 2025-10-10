@@ -132,6 +132,20 @@ header {
   opacity: 0.9;
 }
 
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover; /* keeps images nicely cropped */
+  max-height: 180px; /* keeps card height consistent */
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
