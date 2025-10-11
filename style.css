@@ -239,6 +239,60 @@ header {
   color: var(--white);
 }
 
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-items: center;
+}
+
+.social-card {
+  background-color: var(--gray);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--white);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  width: 100%;
+  max-width: 230px;
+  box-shadow: 0 0 0 rgba(0, 255, 136, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.4);
+  color: var(--green);
+}
+
+.social-card i {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--green);
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.social-card:hover i {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.8);
+}
+
+.social-card h3 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.2rem;
+}
+
+.social-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--white);
+  opacity: 0.8;
+}
+
 footer {
   background-color: var(--gray);
   text-align: center;
