@@ -260,7 +260,6 @@ header {
 
 .social-card:hover i {
   transform: scale(1.1);
-  text-shadow: 0 0 10px rgba(0, 255, 136, 0.8);
 }
 
 .social-card h3 {
