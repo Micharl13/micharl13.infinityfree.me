@@ -227,10 +227,10 @@ header {
 
 .social-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
-  justify-items: center;
+  justify-content: center; /* center the grid if row isn’t full */
 }
 
 .social-card {
