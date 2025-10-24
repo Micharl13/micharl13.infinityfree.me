@@ -44,10 +44,9 @@ header {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.logo {
-  color: var(--green);
-  font-weight: 700;
-  font-size: 1.5rem;
+.logo img { 
+height: 50px;
+width: auto;
 }
 
 .nav-links {
