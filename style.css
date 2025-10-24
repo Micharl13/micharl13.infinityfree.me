@@ -144,12 +144,11 @@ header {
   margin-bottom: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   object-fit: cover;
-  max-height: 180px;
+  max-height: 150px;
 }
 
 .project-card:hover img {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
 }
 
 .gallery-grid {
