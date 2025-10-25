@@ -283,8 +283,8 @@ width: auto;
 }
 
 .about-logo {
-  width: 400px;
-  height: 400px;
+  width: 250px;
+  height: 250px;
   background-color: #0a0a0a;
   -webkit-user-drag: none;
   -webkit-touch-callout: none;
