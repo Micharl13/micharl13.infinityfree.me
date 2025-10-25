@@ -87,10 +87,6 @@ width: auto;
   color: var(--white);
 }
 
-.section h2 {
-  box-shadow: 0 5px 15px rgba(0, 255, 136, 0.4);
-}
-
 .btn {
   display: inline-block;
   margin-top: 1rem;
