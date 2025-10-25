@@ -278,6 +278,12 @@ width: auto;
   opacity: 0.8;
 }
 
+.about-logo {
+  width: 1000px;
+  height: 1000px;
+  border-radius: 10px;
+}
+
 footer {
   background-color: var(--gray);
   text-align: center;
