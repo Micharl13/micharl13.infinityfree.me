@@ -281,7 +281,6 @@ width: auto;
 .about-logo {
   width: 500px;
   height: 500px;
-  border: 25px solid #000000;
   border-radius: 25px;
   -webkit-user-drag: none;
   -webkit-touch-callout: none;
