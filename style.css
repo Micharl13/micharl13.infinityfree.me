@@ -142,8 +142,7 @@ width: auto;
 }
 
 .project-card img {
-  width: 80%;
-  border-radius: 8px;
+  width: 75%;
   margin-bottom: 1rem;
   transition: transform 0.3s ease;
   object-fit: cover;
