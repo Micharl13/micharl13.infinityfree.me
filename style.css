@@ -64,6 +64,10 @@ width: auto;
   transition: color 0.3s;
 }
 
+.nav-links a .current-page {
+  color: var(--green);
+}
+
 .nav-links a:hover {
   color: var(--green);
 }
