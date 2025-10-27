@@ -89,27 +89,39 @@ width: auto;
 
 .welcome-text {
   font-size: 2.5rem;
-  background: linear-gradient(270deg, #00ff88, #00cc66, #008000, #00ffaa);
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-  animation: gradientShift 6s ease infinite, glowPulse 2.5s ease-in-out infinite;
-  display: inline-block;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+  display: inline-block;
+
+  /* Animated rainbow gradient */
+  background: linear-gradient(
+    270deg,
+    #ff0000,
+    #ff7f00,
+    #ffff00,
+    #00ff00,
+    #0000ff,
+    #4b0082,
+    #8f00ff
+  );
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbowShift 8s ease infinite, glowPulse 3s ease-in-out infinite;
 }
 
-@keyframes gradientShift {
+/* Gradient animation */
+@keyframes rainbowShift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
+/* Soft glowing text shadow */
 @keyframes glowPulse {
-  0%, 100% { text-shadow: 0 0 10px rgba(0, 255, 136, 0.4); }
-  50% { text-shadow: 0 0 25px rgba(0, 255, 136, 0.8); }
+  0%, 100% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.4); }
+  50% { text-shadow: 0 0 25px rgba(255, 255, 255, 0.8); }
 }
 
 .btn {
