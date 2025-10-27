@@ -182,7 +182,6 @@ width: auto;
 .project-card p {
   color: var(--white);
   opacity: 0.9;
-  margin-top: 0;
 }
 
 .project-card img {
