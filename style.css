@@ -173,6 +173,10 @@ width: auto;
   color: var(--green);
 }
 
+.project-card h6 {
+  margin-top: 0;
+}
+
 .project-card p {
   color: var(--white);
   opacity: 0.9;
