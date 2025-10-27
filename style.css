@@ -108,7 +108,7 @@ width: auto;
   background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: rainbowShift 8s ease infinite, glowPulse 3s ease-in-out infinite;
+  animation: rainbowShift 8s ease infinite; /* glowPulse 3s ease-in-out infinite; */
 }
 
 /* Gradient animation */
