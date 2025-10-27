@@ -170,16 +170,19 @@ width: auto;
 
 .project-card h3 {
   margin-top: 0;
+  margin-bottom: 0;
   color: var(--green);
 }
 
 .project-card h6 {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .project-card p {
   color: var(--white);
   opacity: 0.9;
+  margin-top: 0;
 }
 
 .project-card img {
