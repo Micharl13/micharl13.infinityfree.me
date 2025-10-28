@@ -78,6 +78,13 @@ width: auto;
   background-color: linear-gradient(circle from top left, #000000, #008000);
 }
 
+@media (max-width: 900px) {
+  .about-section p {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
 .home-section { 
   background-image: url('assets/images/home-banner.png');
   background-size: cover;
