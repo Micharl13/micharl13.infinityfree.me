@@ -79,7 +79,7 @@ width: auto;
 }
 
 @media (max-width: 900px) {
-  .about-section p {
+  .section p {
     max-width: 80%;
     margin: 0 auto;
   }
