@@ -322,11 +322,8 @@ width: auto;
   margin: 0;
 }
 
-.social-card p {
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
-  color: var(--white);
-  opacity: 0.8;
+.social-card img {
+  margin-top: 1rem;
 }
 
 .about-logo {
