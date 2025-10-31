@@ -211,8 +211,38 @@ width: auto;
   gap: 1rem;
 }
 
+/* The circle container */
+.icon-row a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  background: transparent;
+
+  /* Default icon color */
+  color: #00ff55;
+
+  /* Glow */
+  box-shadow: 0 0 8px #00ff55;
+
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+/* Icon size */
 .icon-row i {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+}
+
+/* Hover effect: icon turns black, circle stays glowing */
+.icon-row a:hover {
+  color: #000000;
+  background: #00ff55;
+  box-shadow: 0 0 12px #00ff55, 0 0 20px #00ff55;
+  transform: scale(1.1);
 }
 
 .about-logo {
