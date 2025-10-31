@@ -85,13 +85,8 @@ width: auto;
   }
 }
 
-.home-section { 
-  background-image: url('assets/images/banner-animated.gif');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 50vh;
-  color: var(--white);
+.home-banner { 
+  position: center;
 }
 
 .welcome-text {
