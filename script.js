@@ -77,3 +77,16 @@ document.addEventListener("DOMContentLoaded", () => {
     navLinks.classList.toggle("active");
   });
 });
+
+// === Load follower counts from JSON ===
+fetch('data/followers.json')
+  .then(res => res.json())
+  .then(data => {
+    for (const key in data) {
+      const el = document.getElementById(key);
+      if (el) {
+        el.textContent = `${data[key]} Followers`;
+      }
+    }
+  })
+  .catch(err => console.error("Failed to load followers.json:", err));
