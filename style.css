@@ -102,29 +102,6 @@ width: auto;
   transform: translate(-50%, -50%);
 }
 
-/* Apple-style floating button */
-.video-toggle {
-  position: absolute;
-  bottom: 24px;
-  right: 24px;
-  padding: 10px 12px;
-  background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(6px);   /* ✨ premium glass effect */
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 12px;
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
-
-.video-toggle:hover {
-  background: rgba(0, 0, 0, 0.55);
-  border-color: rgba(255, 255, 255, 0.35);
-}
-
-.video-toggle svg {
-  display: block;
-}
-
 .welcome-text {
   font-size: 2.5rem;
   font-weight: 700;
