@@ -1,6 +1,5 @@
 window.addEventListener('load', () => {
   window.scrollTo({
-    top: 10,
-    behavior: 'smooth'
+    top: 50,
   });
 });
