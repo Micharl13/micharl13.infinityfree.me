@@ -86,7 +86,7 @@ width: auto;
 }
 
 .home-section { 
-  background-image: url('assets/images/home-banner.png');
+  background-image: url('assets/images/banner-animated.gif');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
