@@ -77,3 +77,16 @@ document.addEventListener("DOMContentLoaded", () => {
     navLinks.classList.toggle("active");
   });
 });
+
+// === Header show on scroll ===
+let lastScrollY = window.scrollY;
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    header.classList.add('show'); // Show after scrolling down 50px
+  } else {
+    header.classList.remove('show'); // Hide near top
+  }
+  lastScrollY = window.scrollY;
+});
