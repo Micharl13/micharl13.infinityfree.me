@@ -44,17 +44,6 @@ header {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hide header initially */
-header {
-  transform: translateY(-100%);
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Show header when scrolling down */
-header.show {
-  transform: translateY(0);
-}
-
 .logo img { 
 height: 50px;
 width: auto;
