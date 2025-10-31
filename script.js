@@ -79,30 +79,32 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // == Home section hero video play/pause ===
-const video = document.getElementById("heroVideo");
-const toggleBtn = document.getElementById("videoToggle");
+document.addEventListener("DOMContentLoaded", () => {
+  const video = document.getElementById("heroVideo");
+  const toggleBtn = document.getElementById("videoToggle");
 
-const playIcon = `
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
-    <path d="M8 5v14l11-7z"/>
-  </svg>
-`;
+  const playIcon = `
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+      <path d="M8 5v14l11-7z"/>
+    </svg>
+  `;
 
-const pauseIcon = `
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
-    <rect rx="2" x="6" y="4" width="4" height="16"/>
-    <rect rx="2" x="14" y="4" width="4" height="16"/>
-  </svg>
-`;
+  const pauseIcon = `
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+      <rect rx="2" x="6" y="4" width="4" height="16"/>
+      <rect rx="2" x="14" y="4" width="4" height="16"/>
+    </svg>
+  `;
 
-toggleBtn.innerHTML = pauseIcon;
+  toggleBtn.innerHTML = pauseIcon;
 
-toggleBtn.addEventListener("click", () => {
-  if (video.paused) {
-    video.play();
-    toggleBtn.innerHTML = pauseIcon;
-  } else {
-    video.pause();
-    toggleBtn.innerHTML = playIcon;
-  }
+  toggleBtn.addEventListener("click", () => {
+    if (video.paused) {
+      video.play();
+      toggleBtn.innerHTML = pauseIcon;
+    } else {
+      video.pause();
+      toggleBtn.innerHTML = playIcon;
+    }
+  });
 });
