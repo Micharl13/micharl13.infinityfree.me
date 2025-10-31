@@ -265,42 +265,6 @@ hr {
   border-radius: 5px;
 }
 
-/* --- Responsive Navbar --- */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: var(--green);
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-/* Mobile view */
-@media (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background: rgba(20, 20, 20, 0.95);
-    backdrop-filter: blur(10px);
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 2rem;
-    width: 200px;
-    display: none;
-    box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
-    border-radius: 0 0 0 15px;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-}
-
 footer {
   background-color: var(--gray);
   text-align: center;
