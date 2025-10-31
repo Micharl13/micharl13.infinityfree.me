@@ -205,14 +205,14 @@ width: auto;
   transform: scale(1.05);
 }
 
-.social-icon {
-  font-size: 2rem;
-  margin-bottom: 0.75rem;
-  color: var(--green);
+.icon-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.social-icon:hover {
-  
+.icon-row i {
+  font-size: 1.5rem;
 }
 
 .about-logo {
