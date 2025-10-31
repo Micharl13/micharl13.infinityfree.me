@@ -41,33 +41,6 @@ document.querySelectorAll('a[href]').forEach(link => {
   });
 });
 
-// === Lightbox Functionality ===
-const galleryImages = document.querySelectorAll('.gallery-item img');
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.getElementById('lightbox-img');
-const lightboxTitle = document.getElementById('lightbox-title');
-const lightboxDate = document.getElementById('lightbox-date');
-const closeBtn = document.querySelector('.lightbox .close');
-
-galleryImages.forEach(img => {
-  img.addEventListener('click', () => {
-    lightboxImg.src = img.src;
-    lightboxTitle.textContent = img.dataset.title;
-    lightboxDate.textContent = img.dataset.date;
-    lightbox.classList.add('active');
-  });
-});
-
-closeBtn.addEventListener('click', () => {
-  lightbox.classList.remove('active');
-});
-
-lightbox.addEventListener('click', (e) => {
-  if (e.target === lightbox) {
-    lightbox.classList.remove('active');
-  }
-});
-
 // == Menu Dropdown ===
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.querySelector(".menu-toggle");
