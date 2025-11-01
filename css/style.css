@@ -142,44 +142,126 @@ width: auto;
 }
 
 .project-card {
-  background-color: var(--gray);
+  position: relative;
+  background: rgba(30, 30, 30, 0.6);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  border: 2px solid rgba(0, 255, 136, 0.2);
   padding: 2rem;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-decoration: none;
-  color: var(--white);
-  display: block;
-  cursor: pointer;
   max-width: 300px;
   margin: 0 auto;
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  cursor: pointer;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 25px rgba(0, 255, 136, 0.4);
-  color: var(--green);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 50px rgba(0, 255, 136, 0.5), 0 0 20px rgba(0, 255, 136, 0.3) inset;
+  border-color: rgba(0, 255, 136, 0.8);
 }
 
-.project-card h3 {
-  margin-top: 0;
-  color: var(--green);
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(60deg, #00ff88, #00ffff, #ff00ff, #ff0088);
+  animation: rotateBorder 6s linear infinite;
+  z-index: 0;
+  opacity: 0.2;
+  pointer-events: none;
 }
 
-.project-card p {
-  color: var(--white);
-  opacity: 0.9;
+@keyframes rotateBorder {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+.card-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
 }
 
 .project-card img {
-  width: 75%;
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease;
-  object-fit: cover;
+  width: 80%;
   max-height: 180px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  object-fit: cover;
+  filter: brightness(0.9);
 }
 
 .project-card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.08) rotate(2deg);
+  filter: brightness(1);
+}
+
+.project-card h3 {
+  color: #00ff88;
+  margin: 0.5rem 0;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #fff;
+  opacity: 0.85;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project-card:hover p {
+  transform: translateY(2px);
+  opacity: 1;
+}
+
+.badges {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 2;
+}
+
+.badge {
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  box-shadow: 0 0 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Individual badge colors */
+.badge.wip {
+  background: #ff4f4f;
+  box-shadow-color: #ff4f4f;
+}
+.badge.opensource {
+  background: #00ff88;
+  box-shadow-color: #00ff88;
+}
+.badge.featured {
+  background: #00d0ff;
+  box-shadow-color: #00d0ff;
+}
+
+/* Hover animation */
+.project-card:hover .badge {
+  transform: scale(1.1) rotate(-5deg);
+  box-shadow: 0 0 15px currentColor, 0 0 30px rgba(0, 255, 136, 0.5);
 }
 
 .about-logo {
