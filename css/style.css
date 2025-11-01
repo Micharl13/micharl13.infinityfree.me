@@ -255,6 +255,88 @@ width: auto;
   pointer-events: auto;
 }
 
+.about-container {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.about-hero img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid var(--green);
+  margin-bottom: 1rem;
+}
+
+.about-hero h1 {
+  color: var(--green);
+  font-size: 2.5rem;
+}
+
+.about-hero p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0.5rem auto 2rem;
+  line-height: 1.6;
+}
+
+/* Cards */
+.about-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background: rgba(10,10,10,0.6);
+  border: 2px solid var(--green);
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px var(--green);
+}
+
+.card h2 {
+  color: var(--green);
+  margin-bottom: 1rem;
+}
+
+.card ul {
+  list-style: disc inside;
+  padding-left: 0;
+}
+
+/* Timeline */
+.timeline {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.timeline h2 {
+  color: var(--green);
+  margin-bottom: 1rem;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-item .year {
+  color: var(--green);
+  font-weight: bold;
+  min-width: 50px;
+}
+
 hr {
   border: none;
   height: 3px;
