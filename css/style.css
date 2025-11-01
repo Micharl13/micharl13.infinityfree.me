@@ -294,23 +294,23 @@ width: auto;
   max-width: 500px;
   margin: 30px auto;
   padding: 20px 30px;
-  background: #f9f9f9;
-  border-left: 6px solid #4CAF50; /* accent color */
+  background: #000;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 0 15px #00ff66, 0 0 30px #00ff66;
   font-family: 'Georgia', serif;
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #00ff66;
 }
 
 .quote-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 0 20px #00ff66, 0 0 40px #00ff66;
 }
 
 .quote {
   font-size: 1.2rem;
-  color: #333;
+  color: #00ff66;
   line-height: 1.5;
   margin: 0 0 10px 0;
 }
@@ -319,7 +319,7 @@ width: auto;
   display: block;
   text-align: right;
   font-size: 0.9rem;
-  color: #666;
+  color: #33ff99;
 }
 
 hr {
