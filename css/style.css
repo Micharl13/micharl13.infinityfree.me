@@ -208,7 +208,7 @@ width: auto;
 .icon-row {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 /* The circle container */
