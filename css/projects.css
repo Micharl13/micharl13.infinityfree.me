@@ -119,8 +119,8 @@
 /* Featured badge goes top-right */
 .badge.featured {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 0.2rem;
+  right: 0.2rem;
   background-color: #f1b23e;
   color: #fff;
   animation: featuredPulse 1.8s infinite ease-in-out;
