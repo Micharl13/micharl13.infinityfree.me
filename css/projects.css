@@ -114,7 +114,6 @@
   text-transform: lowercase;
   color: #fff;
   background-color: #555;
-  box-shadow: 0 0 6px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
   opacity: 10;
 }
