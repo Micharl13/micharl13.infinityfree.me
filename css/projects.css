@@ -117,3 +117,16 @@
   transition: transform 0.3s ease;
   opacity: 10;
 }
+
+.project-card {
+  position: relative;
+}
+
+/* Featured badge goes top-right */
+.featured-badge {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  background-color: #f39c12;
+  z-index: 5;
+}
