@@ -106,7 +106,7 @@
   font-size: 0.7rem;
   font-weight: bold;
   text-transform: lowercase;
-  color: #fff;
+  color: #4C8FFF;
   background-color: #555;
   transition: transform 0.3s ease;
   opacity: 10;
@@ -122,7 +122,7 @@
   top: 0.2rem;
   right: 0.2rem;
   background-color: #f1b23e;
-  color: #fff;
+  color: #0A0F1F;
   animation: featuredPulse 1.8s infinite ease-in-out;
   font-weight: bold;
   box-shadow: 0 0 8px rgba(255, 200, 50, 0.7);
