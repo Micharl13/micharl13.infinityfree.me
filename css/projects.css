@@ -117,14 +117,3 @@
   box-shadow: 0 0 6px rgba(0,0,0,0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-/* Example individual badge colors */
-.badge.wip { background-color: #ff4f4f; }
-.badge.opensource { background-color: #00ff88; }
-.badge.featured { background-color: #00d0ff; }
-.badge.experimental { background-color: #ffd700; color: #000; }
-
-.project-card:hover .badge {
-  transform: scale(1.1);
-  box-shadow: 0 0 12px currentColor;
-}
