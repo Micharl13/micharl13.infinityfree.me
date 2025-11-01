@@ -293,19 +293,30 @@ width: auto;
 .quote-box {
   max-width: 500px;
   margin: 30px auto;
-  padding: 20px 30px;
+  padding: 25px 30px 20px 50px;
   background: #000;
   border-radius: 12px;
   box-shadow: 0 0 15px #00ff66, 0 0 30px #00ff66;
   font-family: 'Georgia', serif;
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #00ff66;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .quote-box:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 20px #00ff66, 0 0 40px #00ff66;
+}
+
+/* Floating quote icon */
+.quote-icon {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 3rem;
+  color: #00ff66;
+  text-shadow: 0 0 5px #00ff66, 0 0 15px #00ff66, 0 0 30px #00ff66;
+  transform: rotate(-10deg);
 }
 
 .quote {
