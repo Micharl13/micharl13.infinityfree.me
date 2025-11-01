@@ -123,7 +123,7 @@
 }
 
 /* Featured badge goes top-right */
-.featured-badge {
+.badge.featured {
   position: absolute;
   top: 0.6rem;
   right: 0.6rem;
