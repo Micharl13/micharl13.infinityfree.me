@@ -88,18 +88,27 @@
   opacity: 1;
 }
 
-.badges {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  z-index: 2;
+/* Thin separator between description and badges */
+.badge-separator {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0.8rem 0;
 }
 
+/* Badge grid at the bottom */
+.badges {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 6px;
+  justify-items: center;
+  margin-top: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Badge styles */
 .badge {
-  padding: 0.3rem 0.7rem;
+  padding: 0.3rem 0.6rem;
   border-radius: 5px;
   font-size: 0.7rem;
   font-weight: bold;
@@ -110,18 +119,10 @@
 }
 
 /* Individual badge colors */
-.badge.wip {
-  background: #ff4f4f;
-  box-shadow-color: #ff4f4f;
-}
-.badge.opensource {
-  background: #00ff88;
-  box-shadow-color: #00ff88;
-}
-.badge.featured {
-  background: #00d0ff;
-  box-shadow-color: #00d0ff;
-}
+.badge.wip { background: #ff4f4f; box-shadow-color: #ff4f4f; }
+.badge.opensource { background: #00ff88; box-shadow-color: #00ff88; }
+.badge.featured { background: #00d0ff; box-shadow-color: #00d0ff; }
+.badge.experimental { background: #ffd700; box-shadow-color: #ffd700; }
 
 /* Hover animation */
 .project-card:hover .badge {
