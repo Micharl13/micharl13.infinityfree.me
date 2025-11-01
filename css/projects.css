@@ -97,35 +97,34 @@
 
 /* Badge grid at the bottom */
 .badges {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-  gap: 6px;
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px; /* space between badges */
+  justify-content: center; /* center them horizontally */
   margin-top: 0.5rem;
   position: relative;
   z-index: 1;
 }
 
-/* Badge styles */
 .badge {
-  padding: 0.3rem 0.6rem;
-  border-radius: 5px;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px; /* pill shape */
   font-size: 0.7rem;
   font-weight: bold;
-  text-transform: uppercase;
-  color: #000;
-  box-shadow: 0 0 8px;
+  text-transform: lowercase; /* optional, like GitHub tags */
+  color: #fff; /* or #000 if you prefer contrast */
+  background-color: #555; /* fallback */
+  box-shadow: 0 0 6px rgba(0,0,0,0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Individual badge colors */
-.badge.wip { background: #ff4f4f; box-shadow-color: #ff4f4f; }
-.badge.opensource { background: #00ff88; box-shadow-color: #00ff88; }
-.badge.featured { background: #00d0ff; box-shadow-color: #00d0ff; }
-.badge.experimental { background: #ffd700; box-shadow-color: #ffd700; }
+/* Example individual badge colors */
+.badge.wip { background-color: #ff4f4f; }
+.badge.opensource { background-color: #00ff88; }
+.badge.featured { background-color: #00d0ff; }
+.badge.experimental { background-color: #ffd700; color: #000; } /* yellow text for contrast */
 
-/* Hover animation */
 .project-card:hover .badge {
-  transform: scale(1.1) rotate(-5deg);
-  box-shadow: 0 0 15px currentColor, 0 0 30px rgba(0, 255, 136, 0.5);
+  transform: scale(1.1);
+  box-shadow: 0 0 12px currentColor;
 }
