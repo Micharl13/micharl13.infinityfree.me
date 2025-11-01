@@ -128,12 +128,13 @@
   top: 0.6rem;
   right: 0.6rem;
   background-color: #f1b23e;
-  color: #222;
+  color: #fff;
   animation: featuredPulse 1.8s infinite ease-in-out;
   font-weight: bold;
   box-shadow: 0 0 8px rgba(255, 200, 50, 0.7);
   border-radius: 6px;
   z-index: 2;
+  text-transform: uppercase;
 }
 
 @keyframes featuredPulse {
