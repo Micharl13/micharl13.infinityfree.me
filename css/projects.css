@@ -127,6 +127,15 @@
   position: absolute;
   top: 0.6rem;
   right: 0.6rem;
-  background-color: #f39c12;
-  z-index: 5;
+  background-color: #f1b23e;
+  color: #222;
+  animation: featuredPulse 1.8s infinite ease-in-out;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(255, 200, 50, 0.7);
+}
+
+@keyframes featuredPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+  100% { transform: scale(1); }
 }
