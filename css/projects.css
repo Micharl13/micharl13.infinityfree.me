@@ -36,15 +36,9 @@
   width: 200%;
   height: 200%;
   background: linear-gradient(60deg, #00ff88, #00ffff, #ff00ff, #ff0088);
-  animation: rotateBorder 6s linear infinite;
   z-index: 0;
   opacity: 0.2;
   pointer-events: none;
-}
-
-@keyframes rotateBorder {
-  0% { transform: rotate(0deg);}
-  100% { transform: rotate(360deg);}
 }
 
 .card-content {
